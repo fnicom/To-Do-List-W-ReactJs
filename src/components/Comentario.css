@@ -1,5 +1,6 @@
-.Comentario {
-    background-color: grays;
+.Comentarios {
+    background: gray;
     margin-bottom: 2rem;
     border: 1px solid;
+    padding: 10px;
 }
