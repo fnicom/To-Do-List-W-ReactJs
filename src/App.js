@@ -39,6 +39,13 @@ class App extends Component {
 
   }
 
+  removerComentrario = comentario => {
+    let lista = this.state.comentarios;
+
+    lista = lista.filter(c => c !== comentario)
+    this.setState({  comentarios: lista }) 
+  }
+
   digita = event => {
     const { name, value } = event.target;
     this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
@@ -55,9 +62,9 @@ class App extends Component {
             key={indice}
             nome={comentarios.nome} 
             email={comentarios.email} 
-            data={new Date(2020, 3, 19)}>
+            data={comentarios.data}
+            onRemove={this.removerComentrario.bind(this, comentarios)}>
             {comentarios.mensagem}
-            {console.log(indice)}
             </Comentarios>
           ))}
 
