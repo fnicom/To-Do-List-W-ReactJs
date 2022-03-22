@@ -1,3 +1,54 @@
 .App {
   padding: 0 30px;
 }
+
+.novo-comentario {
+  border-radius: .5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .5);
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.novo-comentario h2 {
+  margin: 0;
+}
+
+.novo-comentario input {
+  width: 300px;
+}
+
+.novo-comentario textarea {
+  width: 97%
+
+}
+
+.novo-comentario input, .novo-comentario textarea {
+  color: #4a5568;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  display: block;
+  border-radius: .5rem;
+}
+
+.novo-comentario button {
+  background-color: #4299e1;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.novo-comentario button:hover {
+  background-color: #4299e1;
+}
+
+
+
+
+
+
+
